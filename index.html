@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KANAK | Premium Food Essentials</title>
+
+<meta name="description"
+content="KANAK Chakki Atta, Besan, Maida, Sattu and Rice. Delivery available in Azamgarh.">
+
+<meta name="theme-color" content="#064b38">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#173e31;
+    background:#fff;
+    line-height:1.6;
+}
+
+button,input{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
+}
+
+a{
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    min-height:86px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:9px 6%;
+    background:#fff;
+    border-bottom:1px solid #dbe9e2;
+    box-shadow:0 4px 20px #063e3010;
+}
+
+.logo img{
+    width:136px;
+    height:67px;
+    object-fit:contain;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+    color:#174937;
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    border-radius:8px;
+    background:#eaf6ef;
+    color:#064b38;
+    min-width:46px;
+    min-height:46px;
+    font-size:26px;
+}
+
+/* HERO */
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    min-height:650px;
+    padding:66px 7%;
+    background:linear-gradient(
+        120deg,
+        #043c2d,
+        #075740 65%,
+        #0b6950
+    );
+    color:white;
+    border-bottom:8px solid #f8bd32;
+}
+
+.hero-content{
+    max-width:610px;
+}
+
+.hero h1{
+    font-size:25px;
+    letter-spacing:7px;
+    color:#ffd36a;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-family:Georgia,serif;
+    font-size:clamp(42px,4.4vw,66px);
+    font-weight:400;
+    line-height:1.06;
+    margin-bottom:24px;
+}
+
+.tagline{
+    color:#ffcf61;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#dfefe7;
+    font-size:18px;
+    max-width:510px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    border-radius:8px;
+    padding:13px 22px;
+    text-decoration:none;
+    font-weight:700;
+    margin:0 9px 10px 0;
+    border:0;
+}
+
+.btn-primary{
+    background:#ffc443;
+    color:#173e31;
+}
+
+.btn-whatsapp{
+    background:#fff;
+    color:#075740;
+}
+
+.hero-collection{
+    width:100%;
+    border-radius:28px 28px 8px 8px;
+    background:#f6f0e4;
+    padding:28px 15px 20px;
+    text-align:center;
+}
+
+.hero-range-label{
+    color:#664b26;
+    font-size:12px;
+    letter-spacing:3px;
+    font-weight:800;
+}
+
+.hero-packets{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px 0 8px;
+}
+
+.hero-packet{
+    width:32%;
+    object-fit:contain;
+}
+
+.featured-packet{
+    width:36%;
+}
+
+.hero-collection p{
+    color:#745b3b;
+    font-size:14px;
+}
+
+/* GENERAL */
+
+section{
+    padding:80px 7%;
+}
+
+.section-title{
+    max-width:760px;
+    margin:0 auto 40px;
+    text-align:center;
+}
+
+.section-title h2{
+    font-family:Georgia,serif;
+    font-size:clamp(32px,3.2vw,46px);
+    font-weight:400;
+    color:#064b38;
+    margin-bottom:14px;
+}
+
+.section-title p{
+    color:#61726a;
+}
+
+/* LOCATION */
+
+.location-section{
+    background:#f0f9f3;
+    border-bottom:1px solid #dcebe2;
+}
+
+.location-box{
+    max-width:850px;
+    margin:auto;
+    background:#fff;
+    padding:32px;
+    border-radius:18px;
+    box-shadow:0 12px 35px #15392b12;
+    text-align:center;
+}
+
+.location-box h2{
+    color:#064b38;
+    font-family:Georgia,serif;
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.location-box>p{
+    color:#65776d;
+    margin-bottom:25px;
+}
+
+.location-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.location-btn{
+    border:0;
+    border-radius:8px;
+    padding:13px 20px;
+    background:#075740;
+    color:white;
+    font-weight:700;
+}
+
+.location-btn.manual{
+    background:#ffc443;
+    color:#173e31;
+}
+
+.location-form{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:10px;
+    margin-top:20px;
+}
+
+.location-form input{
+    width:100%;
+    min-height:48px;
+    padding:10px 14px;
+    border:1px solid #bfd4c7;
+    border-radius:8px;
+    outline:none;
+}
+
+.location-form input:focus{
+    border-color:#075740;
+}
+
+.location-status{
+    margin-top:20px;
+    padding:15px;
+    border-radius:10px;
+    font-weight:700;
+}
+
+.location-status.success{
+    background:#e4f7ea;
+    color:#17643d;
+}
+
+.location-status.error{
+    background:#fff0ed;
+    color:#a52e25;
+}
+
+.location-status.info{
+    background:#edf4f1;
+    color:#315a48;
+}
+
+.selected-location{
+    margin-top:15px;
+    color:#315a48;
+    font-size:14px;
+}
+
+/* PRODUCTS */
+
+.catalog-filters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:34px;
+}
+
+.catalog-filter{
+    padding:10px 18px;
+    min-height:44px;
+    border-radius:30px;
+    border:1px solid #c8dfd1;
+    background:white;
+    color:#164b37;
+    font-weight:700;
+}
+
+.catalog-filter.active{
+    background:#075740;
+    color:white;
+}
+
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:28px;
+}
+
+.catalog-card{
+    overflow:hidden;
+    border:1px solid #dce7df;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 10px 26px #15392b09;
+}
+
+.packet-stage{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:320px;
+    background:#f6f0e4;
+    border-bottom:1px solid #e6decf;
+}
+
+.product-image{
+    height:100%;
+    width:auto;
+    object-fit:contain;
+}
+
+.weight-label{
+    position:absolute;
+    right:14px;
+    top:14px;
+    padding:5px 13px;
+    background:#fff;
+    color:#164b37;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:800;
+}
+
+.catalog-info{
+    padding:23px;
+}
+
+.catalog-info h3{
+    font-size:24px;
+    color:#173e31;
+    margin:8px 0 10px;
+}
+
+.catalog-info h3 span{
+    font-size:17px;
+    font-weight:400;
+    color:#68796e;
+}
+
+.catalog-description{
+    font-size:15px;
+    color:#637369;
+    min-height:48px;
+}
+
+.size-picker{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+}
+
+.size-option{
+    min-width:76px;
+    min-height:44px;
+    padding:8px 17px;
+    border-radius:7px;
+    background:white;
+    border:1px solid #bfd4c7;
+    color:#214f39;
+}
+
+.size-option.selected{
+    background:#e8f6ed;
+    border-color:#0b6849;
+    font-weight:800;
+}
+
+.unit-rate{
+    color:#68796e;
+    font-size:14px;
+}
+
+.catalog-price{
+    font-size:27px;
+    color:#075740;
+    font-weight:800;
+    margin:4px 0 16px;
+}
+
+.quantity-label{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#4f6658;
+    font-size:14px;
+    margin:16px 0;
+}
+
+.packet-quantity{
+    width:72px;
+    min-height:44px;
+    padding:7px;
+    border:1px solid #bfd4c7;
+    border-radius:7px;
+    font-size:16px;
+    text-align:center;
+}
+
+.catalog-order{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:48px;
+    padding:12px;
+    text-decoration:none;
+    background:#075740;
+    color:#fff;
+    border-radius:8px;
+    font-weight:700;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:16px;
+}
+
+.feature{
+    padding:25px 16px;
+    text-align:center;
+    background:#f0f9f3;
+    border-radius:12px;
+    border-bottom:4px solid #f4bc39;
+}
+
+.feature-icon{
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    font-size:17px;
+    color:#164d36;
+    margin-bottom:9px;
+}
+
+.feature p{
+    font-size:14px;
+    color:#5f7165;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:70px;
+    align-items:center;
+    background:#f0f9f3;
+}
+
+.about-content{
+    font-size:18px;
+    color:#42614d;
+}
+
+/* PROCESS */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:22px;
+}
+
+.process-card{
+    padding:28px 20px;
+    border:1px solid #dce9df;
+    border-radius:12px;
+    text-align:center;
+}
+
+.process-number{
+    width:48px;
+    height:48px;
+    display:grid;
+    place-items:center;
+    background:#075740;
+    color:#ffd05b;
+    margin:0 auto 16px;
+    border-radius:50%;
+    font-weight:700;
+}
+
+.process-card h3{
+    color:#174a33;
+    margin-bottom:8px;
+}
+
+/* WHY */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:20px;
+}
+
+.why-card{
+    padding:28px;
+    border-radius:12px;
+    background:#f0f9f3;
+}
+
+.why-card h3{
+    color:#154a32;
+    margin-bottom:10px;
+}
+
+.why-card p{
+    color:#5a7062;
+}
+
+/* CTA */
+
+.cta{
+    background:#075740;
+    color:#fff;
+    text-align:center;
+    padding:62px 7%;
+    border-top:6px solid #ffc443;
+}
+
+.cta h2{
+    font-family:Georgia,serif;
+    font-size:clamp(32px,3.5vw,48px);
+    font-weight:400;
+    margin-bottom:17px;
+}
+
+.cta p{
+    color:#d3ecdf;
+    margin-bottom:24px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact h2{
+    font-family:Georgia,serif;
+    font-weight:400;
+    color:#064b38;
+    font-size:40px;
+}
+
+.contact-names{
+    font-size:21px;
+    font-weight:700;
+}
+
+.whatsapp-number{
+    display:inline-block;
+    font-weight:800;
+    font-size:25px;
+    color:#075740;
+    text-decoration:none;
+    margin:16px 0 25px;
+}
+
+/* FOOTER */
+
+footer{
+    padding:42px 7%;
+    text-align:center;
+    background:#022e22;
+    color:#cbe1d4;
+}
+
+footer h2{
+    font-family:Georgia,serif;
+    font-size:34px;
+    color:#ffd05b;
+    letter-spacing:4px;
+}
+
+footer a{
+    color:#ffce59;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+    .features{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .catalog-grid{
+        gap:18px;
+    }
+}
+
+@media(max-width:900px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        padding:20px;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-content{
+        margin:auto;
+    }
+
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .catalog-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .process{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .location-form{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:54px 5%;
+    }
+
+    .hero{
+        padding:45px 5%;
+    }
+
+    .hero h2{
+        font-size:44px;
+    }
+
+    .hero-packet{
+        width:31%;
+    }
+
+    .catalog-grid{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .location-box{
+        padding:25px 18px;
+    }
+
+    .location-buttons{
+        flex-direction:column;
+    }
+
+    .location-btn{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<a href="#home">
+<img src="assets/kanak-logo.png"
+     width="136"
+     height="67"
+     alt="KANAK">
+</a>
+
+<button class="menu-btn"
+        onclick="toggleMenu()"
+        aria-label="Menu">
+☰
+</button>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#delivery">Delivery</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#process">Process</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>KANAK</h1>
+
+<h2>
+Good food.<br>
+Great everyday.
+</h2>
+
+<div class="tagline">
+Khet Ki Shuddhta, Ghar Ka Swaad.
+</div>
+
+<p>
+Atta, Besan, Maida, Sattu and Rice —
+everyday essentials for your family kitchen.
+</p>
+
+<a href="#products"
+   class="btn btn-primary">
+Explore Products
+</a>
+
+<a href="#delivery"
+   class="btn btn-whatsapp">
+📍 Check Delivery
+</a>
+
+</div>
+
+
+<div>
+
+<div class="hero-collection">
+
+<span class="hero-range-label">
+THE KANAK PANTRY
+</span>
+
+<div class="hero-packets">
+
+<img class="hero-packet"
+     src="assets/besan-500gm.png"
+     alt="KANAK Besan">
+
+<img class="hero-packet featured-packet"
+     src="assets/atta-5kg.png"
+     alt="KANAK Atta">
+
+<img class="hero-packet"
+     src="assets/rice-1kg.png"
+     alt="KANAK Rice">
+
+</div>
+
+<p>
+Familiar staples. A fresh new look.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DELIVERY LOCATION -->
+
+<section class="location-section"
+         id="delivery">
+
+<div class="section-title">
+
+<p>DELIVERY SERVICE</p>
+
+<h2>
+Check Your Delivery Area
+</h2>
+
+<p>
+KANAK currently provides delivery in
+<strong>Azamgarh</strong>.
+</p>
+
+</div>
+
+
+<div class="location-box">
+
+<h2>📍 Where should we deliver?</h2>
+
+<p>
+Allow location access or enter your area manually.
+</p>
+
+
+<div class="location-buttons">
+
+<button class="location-btn"
+        onclick="useMyLocation()">
+📍 Use My Location
+</button>
+
+<button class="location-btn manual"
+        onclick="showManualLocation()">
+🏠 Enter Area / PIN Code
+</button>
+
+</div>
+
+
+<div class="location-form"
+     id="locationForm"
+     hidden>
+
+<input
+    type="text"
+    id="areaInput"
+    placeholder="Enter Area e.g. Azamgarh">
+
+<input
+    type="text"
+    id="pincodeInput"
+    placeholder="Enter PIN Code"
+    maxlength="6"
+    inputmode="numeric">
+
+<button class="location-btn"
+        onclick="checkManualLocation()">
+Check
+</button>
+
+</div>
+
+
+<div id="locationStatus"
+     class="location-status info"
+     hidden>
+</div>
+
+<div id="selectedLocation"
+     class="selected-location"
+     hidden>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="section-title">
+
+<p>THE KANAK COLLECTION</p>
+
+<h2>
+Essentials for Every Kitchen
+</h2>
+
+<p>
+Choose your product, pack size and quantity.
+</p>
+
+</div>
+
+
+<div class="catalog-filters">
+
+<button class="catalog-filter active"
+        data-filter="all">
+All Products
+</button>
+
+<button class="catalog-filter"
+        data-filter="atta">
+Chakki Atta
+</button>
+
+<button class="catalog-filter"
+        data-filter="besan">
+Besan
+</button>
+
+<button class="catalog-filter"
+        data-filter="maida">
+Maida
+</button>
+
+<button class="catalog-filter"
+        data-filter="sattu">
+Sattu
+</button>
+
+<button class="catalog-filter"
+        data-filter="rice">
+Rice
+</button>
+
+</div>
+
+
+<div class="catalog-grid">
+
+
+<!-- ATTA -->
+
+<article class="catalog-card"
+         data-product="atta"
+         data-name="Chakki Atta"
+         data-rate="40">
+
+<div class="packet-stage">
+
+<img class="product-image"
+     src="assets/atta-1kg.png"
+     alt="KANAK Atta">
+
+<span class="weight-label">
+1 kg
+</span>
+
+</div>
+
+<div class="catalog-info">
+
+<h3>
+Chakki Atta
+<span>आटा</span>
+</h3>
+
+<p class="catalog-description">
+Whole wheat atta for everyday rotis.
+</p>
+
+<div class="size-picker">
+
+<button class="size-option selected"
+        data-size="1kg"
+        data-kg="1"
+        data-label="1 kg">
+1 kg
+</button>
+
+<button class="size-option"
+        data-size="5kg"
+        data-kg="5"
+        data-label="5 kg">
+5 kg
+</button>
+
+</div>
+
+<p class="unit-rate">
+₹40 / kg
+</p>
+
+<p class="catalog-price">
+₹40 / 1 kg
+</p>
+
+<label class="quantity-label">
+
+Packets
+
+<input class="packet-quantity"
+       type="number"
+       min="1"
+       max="99"
+       value="1">
+
+</label>
+
+<a class="catalog-order"
+   href="#"
+   target="_blank">
+Enquire on WhatsApp
+</a>
+
+</div>
+
+</article>
+
+
+<!-- BESAN -->
+
+<article class="catalog-card"
+         data-product="besan"
+         data-name="Besan"
+         data-rate="80">
+
+<div class="packet-stage">
+
+<img class="product-image"
+     src="assets/besan-500gm.png"
+     alt="KANAK Besan">
+
+<span class="weight-label">
+500 gm
+</span>
+
+</div>
+
+<div class="catalog-info">
+
+<h3>
+Besan
+<span>बेसन</span>
+</h3>
+
+<p class="catalog-description">
+A kitchen staple for pakoras, cheela and sweets.
+</p>
+
+<div class="size-picker">
+
+<button class="size-option selected"
+        data-size="500gm"
+        data-kg="0.5"
+        data-label="500 gm">
+500 gm
+</button>
+
+<button class="size-option"
+        data-size="1kg"
+        data-kg="1"
+        data-label="1 kg">
+1 kg
+</button>
+
+</div>
+
+<p class="unit-rate">
+₹80 / kg
+</p>
+
+<p class="catalog-price">
+₹40 / 500 gm
+</p>
+
+<label class="quantity-label">
+
+Packets
+
+<input class="packet-quantity"
+       type="number"
+       min="1"
+       max="99"
+       value="1">
+
+</label>
+
+<a class="catalog-order"
+   href="#"
+   target="_blank">
+Enquire on WhatsApp
+</a>
+
+</div>
+
+</article>
+
+
+<!-- MAIDA -->
+
+<article class="catalog-card"
+         data-product="maida"
+         data-name="Maida"
+         data-rate="55">
+
+<div class="packet-stage">
+
+<img class="product-image"
+     src="assets/maida-500gm.png"
+     alt="KANAK Maida">
+
+<span class="weight-label">
+500 gm
+</span>
+
+</div>
+
+<div class="catalog-info">
+
+<h3>
+Maida
+<span>मैदा</span>
+</h3>
+
+<p class="catalog-description">
+For baking, homemade snacks and more.
+</p>
+
+<div class="size-picker">
+
+<button class="size-option selected"
+        data-size="500gm"
+        data-kg="0.5"
+        data-label="500 gm">
+500 gm
+</button>
+
+<button class="size-option"
+        data-size="1kg"
+        data-kg="1"
+        data-label="1 kg">
+1 kg
+</button>
+
+</div>
+
+<p class="unit-rate">
+₹55 / kg
+</p>
+
+<p class="catalog-price">
+₹27.50 / 500 gm
+</p>
+
+<label class="quantity-label">
+
+Packets
+
+<input class="packet-quantity"
+       type="number"
+       min="1"
+       max="99"
+       value="1">
+
+</label>
+
+<a class="catalog-order"
+   href="#"
+   target="_blank">
+Enquire on WhatsApp
+</a>
+
+</div>
+
+</article>
+
+
+<!-- SATTU -->
+
+<article class="catalog-card"
+         data-product="sattu"
+         data-name="Sattu"
+         data-rate="100">
+
+<div class="packet-stage">
+
+<img class="product-image"
+     src="assets/sattu-250gm.png"
+     alt="KANAK Sattu">
+
+<span class="weight-label">
+250 gm
+</span>
+
+</div>
+
+<div class="catalog-info">
+
+<h3>
+Sattu
+<span>सत्तू</span>
+</h3>
+
+<p class="catalog-description">
+For familiar homemade drinks and recipes.
+</p>
+
+<div class="size-picker">
+
+<button class="size-option selected"
+        data-size="250gm"
+        data-kg="0.25"
+        data-label="250 gm">
+250 gm
+</button>
+
+<button class="size-option"
+        data-size="500gm"
+        data-kg="0.5"
+        data-label="500 gm">
+500 gm
+</button>
+
+</div>
+
+<p class="unit-rate">
+₹100 / kg
+</p>
+
+<p class="catalog-price">
+₹25 / 250 gm
+</p>
+
+<label class="quantity-label">
+
+Packets
+
+<input class="packet-quantity"
+       type="number"
+       min="1"
+       max="99"
+       value="1">
+
+</label>
+
+<a class="catalog-order"
+   href="#"
+   target="_blank">
+Enquire on WhatsApp
+</a>
+
+</div>
+
+</article>
+
+
+<!-- RICE -->
+
+<article class="catalog-card"
+         data-product="rice"
+         data-name="Rice"
+         data-rate="46">
+
+<div class="packet-stage">
+
+<img class="product-image"
+     src="assets/rice-1kg.png"
+     alt="KANAK Rice">
+
+<span class="weight-label">
+1 kg
+</span>
+
+</div>
+
+<div class="catalog-info">
+
+<h3>
+Rice
+<span>चावल</span>
+</h3>
+
+<p class="catalog-description">
+An everyday staple for your family meals.
+</p>
+
+<div class="size-picker">
+
+<button class="size-option selected"
+        data-size="1kg"
+        data-kg="1"
+        data-label="1 kg">
+1 kg
+</button>
+
+<button class="size-option"
+        data-size="5kg"
+        data-kg="5"
+        data-label="5 kg">
+5 kg
+</button>
+
+</div>
+
+<p class="unit-rate">
+₹46 / kg
+</p>
+
+<p class="catalog-price">
+₹46 / 1 kg
+</p>
+
+<label class="quantity-label">
+
+Packets
+
+<input class="packet-quantity"
+       type="number"
+       min="1"
+       max="99"
+       value="1">
+
+</label>
+
+<a class="catalog-order"
+   href="#"
+   target="_blank">
+Enquire on WhatsApp
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section>
+
+<div class="section-title">
+
+<h2>
+Pure Goodness in Every Roti
+</h2>
+
+<p>
+Quality you can trust for your family.
+</p>
+
+</div>
+
+
+<div class="features">
+
+<div class="feature">
+<div class="feature-icon">🌾</div>
+<h3>Whole Wheat</h3>
+<p>Made from carefully selected whole wheat.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🚫</div>
+<h3>No Preservatives</h3>
+<p>Nothing unnecessary added.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">👨‍👩‍👧‍👦</div>
+<h3>Family Choice</h3>
+<p>Made for everyday family meals.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">⚙️</div>
+<h3>Chakki Fresh</h3>
+<p>Traditional chakki-style milling.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🏡</div>
+<h3>Farm to Home</h3>
+<p>From selected wheat to your kitchen.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about"
+         id="about">
+
+<div class="section-title">
+
+<h2>
+About KANAK
+</h2>
+
+</div>
+
+<div class="about-content">
+
+<p>
+KANAK is built with a simple idea —
+bring the goodness of quality wheat directly
+to your family kitchen.
+</p>
+
+<br>
+
+<p>
+Our Premium Chakki Atta is made from carefully
+selected whole wheat and processed with care
+to give you soft, delicious and wholesome rotis.
+</p>
+
+<br>
+
+<strong>
+Our promise:
+</strong>
+
+<p>
+Khet Ki Shuddhta, Ghar Ka Swaad.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+<div class="section-title">
+
+<h2>
+From Wheat to Your Home
+</h2>
+
+<p>
+Our simple process focuses on quality.
+</p>
+
+</div>
+
+
+<div class="process">
+
+<div class="process-card">
+
+<div class="process-number">
+1
+</div>
+
+<h3>
+Wheat Selection
+</h3>
+
+<p>
+Carefully selected quality wheat.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+2
+</div>
+
+<h3>
+Cleaning
+</h3>
+
+<p>
+Wheat is cleaned before milling.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+3
+</div>
+
+<h3>
+Chakki Milling
+</h3>
+
+<p>
+Traditional chakki-style grinding.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+4
+</div>
+
+<h3>
+Packing
+</h3>
+
+<p>
+Fresh product is packed carefully.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY KANAK -->
+
+<section id="why">
+
+<div class="section-title">
+
+<h2>
+Why Choose KANAK?
+</h2>
+
+</div>
+
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>🌾 Quality Wheat</h3>
+<p>
+We focus on carefully selected wheat.
+</p>
+</div>
+
+<div class="why-card">
+<h3>⚙️ Traditional Milling</h3>
+<p>
+Chakki-style milling for familiar taste.
+</p>
+</div>
+
+<div class="why-card">
+<h3>🏠 Made for Home</h3>
+<p>
+Designed for everyday family meals.
+</p>
+</div>
+
+<div class="why-card">
+<h3>📦 Fresh Packing</h3>
+<p>
+Careful packing to maintain quality.
+</p>
+</div>
+
+<div class="why-card">
+<h3>❤️ Family First</h3>
+<p>
+Products made for everyday families.
+</p>
+</div>
+
+<div class="why-card">
+<h3>🌱 Farm to Home</h3>
+<p>
+Connecting quality wheat with your kitchen.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<h2>
+Bring KANAK Home Today
+</h2>
+
+<p>
+Delivery available in Azamgarh.
+</p>
+
+<a href="#delivery"
+   class="btn btn-whatsapp">
+📍 Check Delivery & Order
+</a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact"
+         id="contact">
+
+<h2>
+Contact KANAK
+</h2>
+
+<p class="contact-names">
+Saurabh Upadhyay & Sanyam Upadhyay
+</p>
+
+<p>
+For orders and enquiries, contact us on WhatsApp.
+</p>
+
+<a class="whatsapp-number"
+   href="https://wa.me/919236533856"
+   target="_blank">
+
+📱 +91 9236533856
+
+</a>
+
+<br>
+
+<a class="btn btn-whatsapp"
+   href="https://wa.me/919236533856"
+   target="_blank">
+
+💬 Chat on WhatsApp
+
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+KANAK
+</h2>
+
+<p>
+Saurabh Upadhyay & Sanyam Upadhyay
+</p>
+
+<p>
+Khet Ki Shuddhta, Ghar Ka Swaad.
+</p>
+
+<br>
+
+<p>
+Delivery Area:
+<strong>Azamgarh</strong>
+</p>
+
+<br>
+
+<p>
+WhatsApp:
+<a href="https://wa.me/919236533856"
+   target="_blank">
++91 9236533856
+</a>
+</p>
+
+<br>
+
+<p>
+© <span id="year"></span> KANAK.
+All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+const whatsappNumber = "919236533856";
+
+/*
+   KANAK DELIVERY AREA
+
+   Abhi Azamgarh ko serviceable rakha gaya hai.
+   Baad mein yahan aur cities/areas add kar sakte ho.
+*/
+
+const serviceableAreas = [
+    "azamgarh",
+    "azimgarh",
+    "azam garh"
+];
+
+let customerLocation = {
+    area: "",
+    pincode: "",
+    latitude: "",
+    longitude: ""
+};
+
+
+/* =========================
+   MENU
+========================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* =========================
+   LOCATION FORM
+========================= */
+
+function showManualLocation(){
+
+    const form =
+        document.getElementById("locationForm");
+
+    form.hidden = false;
+
+    document.getElementById("areaInput").focus();
+
+}
+
+
+/* =========================
+   CHECK AREA
+========================= */
+
+function checkArea(area,pincode){
+
+    area = (area || "")
+        .trim()
+        .toLowerCase();
+
+    pincode = (pincode || "")
+        .trim();
+
+    /*
+       Azamgarh name se delivery available.
+
+       Agar customer PIN code enter karta hai
+       aur area bhi Azamgarh likhta hai,
+       delivery available hogi.
+    */
+
+    const areaMatched =
+        serviceableAreas.some(item =>
+            area.includes(item)
+        );
+
+    /*
+       Azamgarh ke commonly used PIN range ko
+       optional support diya gaya hai.
+
+       Agar exact area "Azamgarh" likha gaya hai
+       to direct delivery available rahegi.
+    */
+
+    const azamgarhPin =
+        /^276[0-9]{3}$/.test(pincode);
+
+    if(areaMatched || azamgarhPin){
+
+        customerLocation.area =
+            area || "Azamgarh";
+
+        customerLocation.pincode =
+            pincode;
+
+        showLocationSuccess();
+
+        updateAllWhatsAppLinks();
+
+        return true;
+
+    }
+
+    showLocationError();
+
+    return false;
+}
+
+
+/* =========================
+   MANUAL LOCATION
+========================= */
+
+function checkManualLocation(){
+
+    const area =
+        document.getElementById("areaInput").value;
+
+    const pincode =
+        document.getElementById("pincodeInput").value;
+
+    if(!area && !pincode){
+
+        showStatus(
+            "Please enter your area or PIN code.",
+            "error"
+        );
+
+        return;
+    }
+
+    checkArea(area,pincode);
+
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+function showLocationSuccess(){
+
+    const status =
+        document.getElementById("locationStatus");
+
+    status.hidden = false;
+
+    status.className =
+        "location-status success";
+
+    status.innerHTML =
+        "✅ <strong>Delivery Available!</strong><br>" +
+        "KANAK delivery is available in Azamgarh.";
+
+    const selected =
+        document.getElementById("selectedLocation");
+
+    selected.hidden = false;
+
+    selected.textContent =
+        "Selected Area: " +
+        customerLocation.area +
+        (customerLocation.pincode
+            ? " | PIN: " + customerLocation.pincode
+            : "");
+
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+function showLocationError(){
+
+    showStatus(
+        "❌ Sorry, KANAK delivery is currently available only in Azamgarh.",
+        "error"
+    );
+
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+function showStatus(message,type){
+
+    const status =
+        document.getElementById("locationStatus");
+
+    status.hidden = false;
+
+    status.className =
+        "location-status " + type;
+
+    status.innerHTML = message;
+
+}
+
+
+/* =========================
+   USE MY LOCATION
+========================= */
+
+function useMyLocation(){
+
+    if(!navigator.geolocation){
+
+        showStatus(
+            "Your browser does not support location access. Please enter your area manually.",
+            "error"
+        );
+
+        showManualLocation();
+
+        return;
+    }
+
+    showStatus(
+        "📍 Getting your location...",
+        "info"
+    );
+
+    navigator.geolocation.getCurrentPosition(
+
+        async function(position){
+
+            const latitude =
+                position.coords.latitude;
+
+            const longitude =
+                position.coords.longitude;
+
+            customerLocation.latitude =
+                latitude;
+
+            customerLocation.longitude =
+                longitude;
+
+            /*
+               Browser GPS gives coordinates.
+               We use OpenStreetMap reverse geocoding
+               to identify the city/area.
+            */
+
+            try{
+
+                const url =
+                    "https://nominatim.openstreetmap.org/reverse" +
+                    "?format=json" +
+                    "&lat=" + latitude +
+                    "&lon=" + longitude +
+                    "&zoom=10" +
+                    "&addressdetails=1";
+
+                const response =
+                    await fetch(url);
+
+                if(!response.ok){
+                    throw new Error("Location lookup failed");
+                }
+
+                const data =
+                    await response.json();
+
+                const address =
+                    data.address || {};
+
+                const city =
+                    address.city ||
+                    address.town ||
+                    address.village ||
+                    address.municipality ||
+                    address.county ||
+                    "";
+
+                const postcode =
+                    address.postcode || "";
+
+                /*
+                   Check whether the location is
+                   within Azamgarh.
+                */
+
+                const detectedText =
+                    (
+                        city +
+                        " " +
+                        (address.district || "") +
+                        " " +
+                        (address.state_district || "")
+                    ).toLowerCase();
+
+                const isAzamgarh =
+                    detectedText.includes("azamgarh");
+
+                if(isAzamgarh){
+
+                    customerLocation.area =
+                        city || "Azamgarh";
+
+                    customerLocation.pincode =
+                        postcode;
+
+                    showLocationSuccess();
+
+                    updateAllWhatsAppLinks();
+
+                }else{
+
+                    showStatus(
+                        "❌ Your detected location is " +
+                        (city || "outside Azamgarh") +
+                        ". KANAK delivery is currently available only in Azamgarh.",
+                        "error"
+                    );
+
+                }
+
+            }catch(error){
+
+                showStatus(
+                    "⚠️ Location detected, but area could not be identified automatically. Please enter Azamgarh manually.",
+                    "error"
+                );
+
+                showManualLocation();
+
+            }
+
+        },
+
+        function(error){
+
+            showStatus(
+                "📍 Location permission was not available. Please enter your area manually.",
+                "error"
+            );
+
+            showManualLocation();
+
+        },
+
+        {
+            enableHighAccuracy:false,
+            timeout:10000,
+            maximumAge:300000
+        }
+
+    );
+
+}
+
+
+/* =========================
+   PRODUCT ORDER
+========================= */
+
+function formatRupees(value){
+
+    return Number.isInteger(value)
+        ? String(value)
+        : value.toFixed(2);
+
+}
+
+
+function updateOrder(card){
+
+    const size =
+        card.querySelector(
+            ".size-option.selected"
+        );
+
+    const quantityInput =
+        card.querySelector(
+            ".packet-quantity"
+        );
+
+    const quantity =
+        Number(quantityInput.value);
+
+    const packPrice =
+        Number(card.dataset.rate) *
+        Number(size.dataset.kg);
+
+    card.querySelector(
+        ".catalog-price"
+    ).textContent =
+        "₹" +
+        formatRupees(packPrice) +
+        " / " +
+        size.dataset.label;
+
+
+    if(
+        !Number.isInteger(quantity) ||
+        quantity < 1 ||
+        quantity > 99
+    ){
+
+        quantityInput.setCustomValidity(
+            "Choose quantity from 1 to 99."
+        );
+
+        return false;
+    }
+
+
+    quantityInput.setCustomValidity("");
+
+
+    let locationText =
+        "Delivery Area: Not selected yet.";
+
+    if(customerLocation.area){
+
+        locationText =
+            "Delivery Area: " +
+            customerLocation.area;
+
+        if(customerLocation.pincode){
+
+            locationText +=
+                ", PIN: " +
+                customerLocation.pincode;
+
+        }
+
+    }
+
+
+    const message =
+        "Hello KANAK,%0A%0A" +
+        "I would like to order:%0A" +
+        "Product: " +
+        card.dataset.name +
+        "%0A" +
+        "Pack: " +
+        size.dataset.label +
+        "%0A" +
+        "Quantity: " +
+        quantity +
+        " packet(s)%0A" +
+        "Pack Price: Rs. " +
+        formatRupees(packPrice) +
+        "%0A" +
+        "Product Subtotal: Rs. " +
+        formatRupees(
+            packPrice * quantity
+        ) +
+        "%0A%0A" +
+        locationText +
+        "%0A%0A" +
+        "Please confirm availability and delivery charges.";
+
+
+    card.querySelector(
+        ".catalog-order"
+    ).href =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        message;
+
+    return true;
+
+}
+
+
+/* =========================
+   UPDATE ALL ORDERS
+========================= */
+
+function updateAllWhatsAppLinks(){
+
+    document
+        .querySelectorAll(".catalog-card")
+        .forEach(card => {
+
+            updateOrder(card);
+
+        });
+
+}
+
+
+/* =========================
+   PRODUCT SIZE
+========================= */
+
+document
+.querySelectorAll(".catalog-card")
+.forEach(card => {
+
+    card
+    .querySelectorAll(".size-option")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            function(){
+
+                card
+                .querySelectorAll(".size-option")
+                .forEach(btn => {
+
+                    btn.classList.remove(
+                        "selected"
+                    );
+
+                });
+
+
+                button.classList.add(
+                    "selected"
+                );
+
+
+                const image =
+                    card.querySelector(
+                        ".product-image"
+                    );
+
+
+                image.src =
+                    "assets/" +
+                    card.dataset.product +
+                    "-" +
+                    button.dataset.size +
+                    ".png";
+
+
+                image.alt =
+                    "KANAK " +
+                    card.dataset.name +
+                    " " +
+                    button.dataset.label;
+
+
+                card.querySelector(
+                    ".weight-label"
+                ).textContent =
+                    button.dataset.label;
+
+
+                updateOrder(card);
+
+            }
+        );
+
+    });
+
+
+    card
+    .querySelector(".packet-quantity")
+    .addEventListener(
+        "input",
+        function(){
+
+            updateOrder(card);
+
+        }
+    );
+
+
+    card
+    .querySelector(".catalog-order")
+    .addEventListener(
+        "click",
+        function(event){
+
+            /*
+               Customer ko pehle delivery area
+               select karne ke liye bolenge.
+            */
+
+            if(!customerLocation.area){
+
+                event.preventDefault();
+
+                showStatus(
+                    "📍 Please select your delivery area first.",
+                    "error"
+                );
+
+                document
+                    .getElementById("delivery")
+                    .scrollIntoView({
+                        behavior:"smooth"
+                    });
+
+                return;
+
+            }
+
+
+            if(!updateOrder(card)){
+
+                event.preventDefault();
+
+            }
+
+        }
+    );
+
+
+    updateOrder(card);
+
+});
+
+
+/* =========================
+   PRODUCT FILTER
+========================= */
+
+document
+.querySelectorAll(".catalog-filter")
+.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function(){
+
+            document
+            .querySelectorAll(
+                ".catalog-filter"
+            )
+            .forEach(btn => {
+
+                btn.classList.remove(
+                    "active"
+                );
+
+            });
+
+
+            button.classList.add(
+                "active"
+            );
+
+
+            const filter =
+                button.dataset.filter;
+
+
+            document
+            .querySelectorAll(
+                ".catalog-card"
+            )
+            .forEach(card => {
+
+                if(
+                    filter === "all" ||
+                    card.dataset.product === filter
+                ){
+
+                    card.hidden = false;
+
+                }else{
+
+                    card.hidden = true;
+
+                }
+
+            });
+
+        }
+    );
+
+});
+
+
+/* =========================
+   YEAR
+========================= */
+
+document
+.getElementById("year")
+.textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
